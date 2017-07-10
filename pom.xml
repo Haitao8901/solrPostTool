@@ -4,9 +4,6 @@
 	<groupId>solrPostTool</groupId>
 	<artifactId>solrPostTool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
-		<org.apache.poi.version>3.11</org.apache.poi.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.solr</groupId>
@@ -14,36 +11,10 @@
 			<version>5.5.4</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>${org.apache.poi.version}</version>
-			<exclusions>
-			    <exclusion>
-			        <groupId>commons-codec</groupId>
-					<artifactId>commons-codec</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>${org.apache.poi.version}</version>
-			<exclusions>
-			    <exclusion>
-			        <groupId>stax</groupId>
-					<artifactId>stax-api</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>${org.apache.poi.version}</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.apache.tika</groupId>
-    		<artifactId>tika-parsers</artifactId>
-    		<version>1.7</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
