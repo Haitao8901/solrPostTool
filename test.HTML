@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function showMainWin(){
+		var main = document.getElementById("mainwin");
+		var tool = document.getElementById("toolbar");
+		main.style.display = "";
+		tool.style.display = "none";
+	}
+	
+	function hideMainWin(){
+		var main = document.getElementById("mainwin");
+		var tool = document.getElementById("toolbar");
+		main.style.display = "none";
+		tool.style.display = "";
+	}
+	
+</script>
+</head>
+<body>
+<div id="mainwin" style="position:fixed;width:300px;right:0;bottom:0">
+  <div style="float:right"><input type="button" value="Hide" onClick="hideMainWin()"></div>	
+    <div style="border:1px solid">
+	  <span>${Customer} need you help?</span>
+	  <div>
+	  	<input type="button" value="Accept">
+	  	<input type="button" value="Deny">
+	  </div>
+  </div>
+  <div style="border:1px solid">
+	  <span>${Customer} need you help?</span>
+	  <div>
+	  	<input type="button" value="Accept">
+	  	<input type="button" value="Deny">
+	  </div>
+  </div>
+</div>
+
+<div id="toolbar" style="display:none;position:fixed;width:20px;height:300px;right:0;bottom:0">
+	<span style="cursor:pointer;" onClick="showMainWin()">&lt;&lt;</span>
+	<span style="writing-mode:vertical-lr">Pending Engage Request</span>
+</div>
+</body>
+</html>
